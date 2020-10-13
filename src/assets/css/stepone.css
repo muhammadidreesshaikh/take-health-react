@@ -1,0 +1,32 @@
+.stepone{
+    /* background-image: url(../img/step.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: #f5f5f5;
+    background-blend-mode: soft-light;
+    width: 100%;
+    height: 100vh; */
+    padding: 5% 0;
+}
+
+.stepone .card-body{
+    background-color: white;
+    padding: 25px 10px;
+    border-radius: 8px;
+}
+
+.stepone .card-body h3{
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.stepone .card-body h6{
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+.stepone .card-body .change{
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 12px;
+}

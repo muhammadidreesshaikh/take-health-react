@@ -1,0 +1,79 @@
+.coverage h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.coverage h3{
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.coverage .card-body h6{
+    font-size: 20px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.coverage .card-body .change{
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5%;
+}
+
+.coverage .card-body input{
+    border-radius: 5px;
+    padding: 8px 0 8px 10px;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    color: var(--color-black);
+}
+
+.coverage input::placeholder
+{
+    color: var(--color-gry);
+}
+
+.checks {
+    position: absolute;
+    top: 40%;
+    left: -100%;
+    width: 300px;
+}
+
+.checks .raw{
+    background-color: var(--color-help);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.checks .inner span{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.text-success {
+    color: #28a745!important;
+    font-weight: bold;
+    font-size: 15px;
+    padding-right: 2px;
+}
+
+.checks .raw h4{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.checks .raw ul{
+    list-style: none;
+    padding: 10px 0 0 0;
+}
+
+.checks .raw li{
+    font-size: 13px;
+    padding-top: 5px;
+}

@@ -5,6 +5,7 @@ import StepOne from '../../components/thebasics/StepOne';
 import Elligibility from '../../components/thebasics/Elligibility';
 import StepTwo from '../../components/thebasics/StepTwo';
 import StepThree from '../../components/thebasics/StepThree';
+import Coverage from '../../components/thebasics/Coverage';
 
 
 class Main extends React.Component {
@@ -41,7 +42,7 @@ class Main extends React.Component {
                                     </div>
 
                                     <div className="col-6 col-md-6 col-lg-6">
-                                       <span>X</span>
+                                       <span className="close">X</span>
                                     </div>
 
                                     <div className="col-12 col-md-12 col-lg-12">
@@ -68,9 +69,10 @@ class Main extends React.Component {
                                     {/* <StepOne /> */}
                                     {/* <Elligibility /> */}
                                     {/* <StepTwo /> */}
-                                    <StepThree />
+                                    {/* <StepThree /> */}
+                                    <Coverage />
                                     
-                                    
+
                                     <div className="col-12">
                                         <Link to="/signup" submit className="bg-green w-100 d-block text-center mt-2 font-weight-bold">CONTINUE</Link>
                                         <p className="text-center pt-4">By continuing, you agree to accept our Privacy Policy & Terms of Service.</p>

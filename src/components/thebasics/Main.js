@@ -3,6 +3,7 @@ import '../../assets/css/main.css';
 import { Link } from 'react-router-dom';
 import StepOne from '../../components/thebasics/StepOne';
 import Elligibility from '../../components/thebasics/Elligibility';
+import StepTwo from '../../components/thebasics/StepTwo';
 
 
 class Main extends React.Component {
@@ -62,8 +63,10 @@ class Main extends React.Component {
                                         <h4 className="pt-3">STEP 1 OF 3</h4>
                                     </div>
 
-                                    <StepOne />
+                                    {/* <StepOne /> */}
                                     {/* <Elligibility /> */}
+                                    <StepTwo />
+                                    
                                     
                                    
                                     <div className="col-12">

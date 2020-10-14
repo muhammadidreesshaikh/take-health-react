@@ -25,6 +25,17 @@
     padding-top: 15px;
 }
 
+.stepone .card-body i{
+    font-size: 13px;
+    color: var(--color-green);
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid;
+    padding: 0px 2px 0px 1px;
+    width: 20px;
+    height: 20px;
+}
+
 .stepone .card-body .change{
     margin-bottom: 0;
     font-weight: bold;

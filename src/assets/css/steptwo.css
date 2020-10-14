@@ -1,0 +1,23 @@
+.steptwo .card-body h6{
+    font-size: 17px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.steptwo .card-body i{
+    font-size: 13px;
+    color: var(--color-green);
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid;
+    padding: 0px 2px 0px 1px;
+    width: 20px;
+    height: 20px;
+}
+
+.steptwo .card-body .change{
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5%;
+}

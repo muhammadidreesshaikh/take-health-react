@@ -21,3 +21,21 @@
     font-size: 12px;
     margin-top: 5%;
 }
+
+
+/* menu desktop and mobile switching on responsive  */
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .steptwo .card-body h6{
+        font-size: 19px;
+    }
+
+    .steptwo .card-body .change{
+        font-size: 15px;
+    }
+}

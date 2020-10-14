@@ -35,7 +35,7 @@ class Signup extends React.Component {
     
                                    <div className="inner">
                                     <h3>Bringing high-tech health home to you</h3>
-                                    <div className="seprator"></div>
+                                    <div className="seprator mt-3"></div>
                                     <p className="pt-3">Get matched with the right program, straight from home.</p>
                                    </div>
                                 </div>

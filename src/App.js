@@ -6,6 +6,7 @@ import Main from './components/thebasics/Main';
 import StepOne from './components/thebasics/StepOne';
 import Elligibility from './components/thebasics/Elligibility';
 import StepTwo from './components/thebasics/StepTwo';
+import StepThree from './components/thebasics/StepThree';
 
 import { 
   BrowserRouter as Router, 
@@ -27,6 +28,7 @@ function App() {
               <Route exact path='/stepOne' component={StepOne}></Route>
               <Route exact path='/elligibility' component={Elligibility}></Route>
               <Route exact path='/stepTwo' component={StepTwo}></Route>
+              <Route exact path='/stepThree' component={StepThree}></Route>
             </Switch>
           </div>
       </div>

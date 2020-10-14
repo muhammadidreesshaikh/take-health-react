@@ -42,17 +42,6 @@
     
     margin-top: 20px;
 }
-/* 
-.main .inner h3{
-    font-size: 22px;
-    font-weight: bold;
-    padding-top: 15px;
-}
-
-.main .inner h6{
-    font-size: 15px;
-    padding-top: 15px;
-} */
 
 .main .inner h4{
     font-size: 16px;
@@ -73,5 +62,102 @@
     font-size: 15px;
     color: var(--color-red);
     font-weight: bold;
+}
+
+
+/* menu desktop and mobile switching on responsive  */
+
+@media only screen and (max-width: 768px) {
+    .signup {
+        height: 100vh;
+        padding-top: 10%;
+    }
+
+    .signup .card-body h5:before {
+        top: 32%;
+        left: 8%;
+    }
+
+    .signup .card-body h5:after {
+        top: 32%;
+        right: 9%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .signup{
+        height: 100%;
+        padding: 5% 0;
+    }
+
+    .signup .logo{
+        padding: 5% 0 0 0;
+    }
+
+    .main .inner{
+        height: unset;
+        overflow-y: unset;
+    }
+
+    .signup .inner {
+        padding: 10% 0% 0 0;
+        text-align: center;
+    }
+
+    .signup .logo h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .signup .logo .inner h3{
+        font-size: 28px;
+    }
+
+    .signup .logo .inner p{
+        font-size: 16px;
+        padding: 0 11%;
+    }
+
+    .signup .logo .inner .seprator {
+        width: 15%;
+        display: block;
+        margin: auto;
+    }
+
+    .signup .card-body{
+        top: 0%;
+        padding: 7% 5%;
+        margin-top: 5%;
+    }
+
+    .stepone .card-body h6{
+        font-size: 17px;
+    }
+
+    .signup .card-body h5:before {
+        top: 32%;
+        left: 8%;
+        width: 38%;
+    }
+
+    .signup .card-body h5:after {
+        top: 32%;
+        right: 7%;
+        width: 39%;
+    }
+
+    .stepone .card-body .change{
+        font-size: 14px;
+    }
+
+    .stepone .card-body h6{
+        font-size: 17px;
+    }
+
+    .stepone .card-body .change{
+        font-size: 14px;
+    }
 }
 

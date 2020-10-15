@@ -18,10 +18,28 @@
     overflow-y: auto;
 }
 
-.main .inner span.close{
+.main .inner span.close {
+    cursor: pointer;
     float: right;
-    font-weight: bold;
-    font-size: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.main .inner span.close img
+{
+    width: 20px;
+}
+
+.main .back-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 65px;
+    left: 20px;
+}
+
+.main .back-btn img {
+    width: 25px;
 }
 
 .main .inner h1{

@@ -1,6 +1,10 @@
 import React from 'react';
 import '../../assets/css/main.css';
 import { Link } from 'react-router-dom';
+
+import BackArrow from '../../assets/img/back-arrow.png'
+import Close from '../../assets/img/close.png'
+
 import StepOne from '../../components/thebasics/StepOne';
 import Elligibility from '../../components/thebasics/Elligibility';
 import StepTwo from '../../components/thebasics/StepTwo';
@@ -42,7 +46,14 @@ class Main extends React.Component {
     }
 
     backStep = () => {
-        this.step -= 1;
+        if (this.state.step > 1) {
+
+            this.state.step -= 1;
+
+            this.setState({
+                state: this.state.step
+            });
+        }
     }
 
     render() {
@@ -60,7 +71,9 @@ class Main extends React.Component {
                                     </div>
 
                                     <div className="col-6 col-md-6 col-lg-6">
-                                       <span className="close">X</span>
+                                       <span className="close">
+                                           <img src={Close} />
+                                       </span>
                                     </div>
 
                                     <div className="col-12 col-md-12 col-lg-12">
@@ -72,6 +85,10 @@ class Main extends React.Component {
                                             }
                                             
                                         </h1>
+                                    </div>
+
+                                    <div className="back-btn" onClick={ ()=> {this.backStep()} }>
+                                        <img src={BackArrow} />
                                     </div>
 
                                     <div className="col-4 col-md-4 col-lg-4">

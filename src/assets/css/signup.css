@@ -68,7 +68,7 @@
     position: absolute;
     top: 33%;
     left: 8%;
-    width: 34%;
+    width: 39%;
     height: 1px;
     background-color: var(--color-gry);
 }
@@ -78,8 +78,8 @@
     content: "";
     position: absolute;
     top: 33%;
-    right: 17%;
-    width: 35%;
+    right: 8%;
+    width: 39%;
     height: 1px;
     background-color: var(--color-gry);
 }

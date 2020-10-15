@@ -38,6 +38,17 @@
     color: var(--color-gry);
 }
 
+.coverage .card-body i{
+    font-size: 13px;
+    color: var(--color-green);
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid;
+    padding: 0px 2px 0px 1px;
+    width: 20px;
+    height: 20px;
+}
+
 .checks {
     position: absolute;
     top: 40%;
@@ -76,4 +87,35 @@
 .checks .raw li{
     font-size: 13px;
     padding-top: 5px;
+}
+
+
+
+/* menu desktop and mobile switching on responsive  */
+
+@media only screen and (max-width: 768px) {
+      
+    .coverage h1{
+        font-size: 30px;
+    }
+
+    .coverage h3 {
+        font-size: 15px;
+    }
+
+    .coverage .card-body h6 {
+        font-size: 24px;
+    }
+
+    .coverage .card-body .change {
+        font-size: 16px;
+    }
+
+    .checks {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  
 }

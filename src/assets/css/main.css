@@ -33,9 +33,8 @@
 
 .main .back-btn {
     cursor: pointer;
-    position: absolute;
-    top: 65px;
-    left: 20px;
+    position: relative;
+    top: 25px;
 }
 
 .main .back-btn img {

@@ -76,7 +76,13 @@ class Main extends React.Component {
                                        </span>
                                     </div>
 
-                                    <div className="col-12 col-md-12 col-lg-12">
+                                    <div className="back-btn col-2 col-md-2 col-lg-2" 
+                                        onClick={ ()=> {this.backStep()} }
+                                    >
+                                        <img src={BackArrow} />
+                                    </div>
+
+                                    <div className="col-10 col-md-10 col-lg-10">
                                         <h1 className="text-center pt-4">
                                             { this.state.step >= 1 && this.state.step <=3 ? 
                                                 'The Basics'
@@ -87,9 +93,9 @@ class Main extends React.Component {
                                         </h1>
                                     </div>
 
-                                    <div className="back-btn" onClick={ ()=> {this.backStep()} }>
+                                    {/* <div className="back-btn" onClick={ ()=> {this.backStep()} }>
                                         <img src={BackArrow} />
-                                    </div>
+                                    </div> */}
 
                                     <div className="col-4 col-md-4 col-lg-4">
                                         <div className="active seprator"></div>

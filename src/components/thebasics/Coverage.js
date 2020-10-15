@@ -32,8 +32,6 @@ class Coverage extends React.Component {
                             <div className="col-12 col-md-12 col-lg-12 p-0">
                                 <div className="card-body p-0">
                                     <div className="col-12 col-md-12 col-lg-12">
-                                        <h1>Coverage</h1>
-                                        <h3>ALMOST THERE!</h3>
                                         <h6>Let's ensure your visit is covered!</h6>
                                     </div>
 

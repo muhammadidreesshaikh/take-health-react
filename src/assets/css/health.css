@@ -1,0 +1,22 @@
+.health{
+
+}
+
+.health .card-body h6{
+    font-size: 19px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.health .card-body p{
+    font-size: 15px;
+    padding: 0;
+    color: var(--color-black);
+}
+
+.health .card-body .change{
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5%;
+}

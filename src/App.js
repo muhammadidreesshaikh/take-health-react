@@ -8,6 +8,7 @@ import Elligibility from './components/thebasics/Elligibility';
 import StepTwo from './components/thebasics/StepTwo';
 import StepThree from './components/thebasics/StepThree';
 import Coverage from './components/thebasics/Coverage';
+import Health from './components/thebasics/Health';
 
 import { 
   BrowserRouter as Router, 
@@ -31,6 +32,7 @@ function App() {
               <Route exact path='/stepTwo' component={StepTwo}></Route>
               <Route exact path='/stepThree' component={StepThree}></Route>
               <Route exact path='/coverage' component={Coverage}></Route>
+              <Route exact path='/health' component={Health}></Route>
             </Switch>
           </div>
       </div>

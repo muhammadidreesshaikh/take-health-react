@@ -23,7 +23,7 @@ class Elligibility extends React.Component {
 
     render() {
         return(
-            <section> 
+            <section className="w-100"> 
                 <div className="elligibility">
                     <div className="container">
                         <div className="row justify-content-center">

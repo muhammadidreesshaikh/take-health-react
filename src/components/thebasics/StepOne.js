@@ -24,7 +24,7 @@ class StepOne extends React.Component {
 
     render() {
         return(
-            <section> 
+            <section className="w-100"> 
                 <div className="stepone">
                     <div className="container">
                         <div className="row justify-content-center">

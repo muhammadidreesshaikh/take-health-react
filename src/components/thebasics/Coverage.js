@@ -24,7 +24,7 @@ class Coverage extends React.Component {
 
     render() {
         return(
-            <section> 
+            <section className="w-100"> 
                 <div className="coverage">
                     <div className="container">
                         <div className="row justify-content-center">

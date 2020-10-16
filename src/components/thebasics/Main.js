@@ -11,6 +11,9 @@ import StepTwo from '../../components/thebasics/StepTwo';
 import StepThree from '../../components/thebasics/StepThree';
 import Coverage from '../../components/thebasics/Coverage';
 import Health from '../../components/thebasics/Health';
+import HealthPay from '../../components/thebasics/HealthPay';
+import Shipping from '../../components/thebasics/Shipping';
+import Billing from '../../components/thebasics/Billing';
 
 
 class Main extends React.Component {
@@ -125,8 +128,12 @@ class Main extends React.Component {
                                     { this.state.step == 3 ? <StepThree /> : null }
                                     { this.state.step == 4 ? <Coverage /> : null }
                                     { this.state.step == 5 ? <Health /> : null }
+                                    { this.state.step == 6 ? <HealthPay /> : null }
+                                    { this.state.step == 7 ? <Shipping /> : null }
+                                    { this.state.step == 8 ? <Billing /> : null }
 
                                     {/* <Elligibility /> */}
+                                    
 
                                     <div className="col-12">
                                         {

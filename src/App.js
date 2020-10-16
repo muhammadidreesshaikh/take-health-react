@@ -9,6 +9,10 @@ import StepTwo from './components/thebasics/StepTwo';
 import StepThree from './components/thebasics/StepThree';
 import Coverage from './components/thebasics/Coverage';
 import Health from './components/thebasics/Health';
+import HealthPay from './components/thebasics/HealthPay';
+import Shipping from './components/thebasics/Shipping';
+import Billing from './components/thebasics/Billing';
+
 
 import { 
   BrowserRouter as Router, 
@@ -33,6 +37,9 @@ function App() {
               <Route exact path='/stepThree' component={StepThree}></Route>
               <Route exact path='/coverage' component={Coverage}></Route>
               <Route exact path='/health' component={Health}></Route>
+              <Route exact path='/healthpay' component={HealthPay}></Route>
+              <Route exact path='/Shipping' component={Shipping}></Route>
+              <Route exact path='/billing' component={Billing}></Route>
             </Switch>
           </div>
       </div>

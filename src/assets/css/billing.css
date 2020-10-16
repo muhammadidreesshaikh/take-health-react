@@ -1,0 +1,66 @@
+.billing .card-body h6{
+    font-size: 20px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.billing .card-body .list{
+    margin-top: 10%;
+}
+
+.billing .card-body .list img{
+    width: 100%;
+    height: auto;
+}
+
+.text-success {
+    color: #28a745!important;
+    font-weight: bold;
+    font-size: 15px;
+    padding-right: 2px;
+}
+
+.billing ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.billing li{
+    font-size: 15px;
+    padding-top: 5px;
+    color: var(--color-black);
+}
+
+.billing .card-body .change{
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.billing .card-body input{
+    font-size: 14px;
+    color: var(--color-black);
+}
+
+.billing .form-group{
+    position: relative;
+}
+
+
+.billing .form-group img{
+    width: 15%;
+    position: absolute;
+    top: 29px;
+}
+
+.billing .card-body i{
+    font-size: 9px;
+    color: var(--color-green);
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid;
+    padding: 0px 2px 0px 1px;
+    width: 15px;
+    height: 15px;
+}

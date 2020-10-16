@@ -38,24 +38,24 @@ class Health extends React.Component {
                                     <div className="col-12 col-md-12 col-lg-12">
                                         <p className="pt-3">Have you ever been diagnosed with or taken medication for any of the following?</p>
 
-                                        <div class="form-check">
+                                        <div className="form-check pt-4">
                                             <input class="form-check-input" type="checkbox"></input>
                                             <label class="form-check-label" for="defaultCheck1">
-                                                Diabetes (Type 1)
+                                                Diabetes (Type 1) <i type="button" class="btn " data-toggle="tooltip" data-placement="right" title="Tooltip on right">?</i>
                                             </label>
                                         </div>
 
-                                        <div class="form-check">
+                                        <div className="form-check pt-4">
                                             <input class="form-check-input" type="checkbox"></input>
                                             <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
+                                                Hypertension <i type="button" class="btn " data-toggle="tooltip" data-placement="right" title="Tooltip on right">?</i>
                                             </label>
                                         </div>
 
-                                        <div class="form-check">
+                                        <div className="form-check pt-4">
                                             <input class="form-check-input" type="checkbox"></input>
                                             <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
+                                                I've never been diagonesd with or taken medication for any of these conditions.
                                             </label>
                                         </div>
                                     </div>

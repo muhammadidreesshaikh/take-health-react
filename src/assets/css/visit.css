@@ -1,0 +1,32 @@
+.visit .card-body h6{
+    font-size: 20px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.visit .card-body p{
+    font-size: 15px;
+    padding: 0;
+    color: var(--color-black);
+}
+
+.text-success {
+    font-weight: bold;
+    font-size: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    padding-right: 15px;
+}
+
+.visit ul{
+    list-style: none;
+    padding: 0 0 0 0;
+    margin-bottom: 0;
+}
+
+.visit li{
+    font-size: 14px;
+    padding-top: 25px;
+    color: var(--color-black);
+    font-weight: bold;
+}

@@ -12,6 +12,7 @@ import Health from './components/thebasics/Health';
 import HealthPay from './components/thebasics/HealthPay';
 import Shipping from './components/thebasics/Shipping';
 import Billing from './components/thebasics/Billing';
+import Visit from './components/thebasics/Visit';
 
 
 import { 
@@ -40,6 +41,7 @@ function App() {
               <Route exact path='/healthpay' component={HealthPay}></Route>
               <Route exact path='/Shipping' component={Shipping}></Route>
               <Route exact path='/billing' component={Billing}></Route>
+              <Route exact path='/visit' component={Visit}></Route>
             </Switch>
           </div>
       </div>

@@ -14,6 +14,7 @@ import Health from '../../components/thebasics/Health';
 import HealthPay from '../../components/thebasics/HealthPay';
 import Shipping from '../../components/thebasics/Shipping';
 import Billing from '../../components/thebasics/Billing';
+import Visit from '../../components/thebasics/Visit';
 
 
 class Main extends React.Component {
@@ -131,6 +132,7 @@ class Main extends React.Component {
                                     { this.state.step == 6 ? <HealthPay /> : null }
                                     { this.state.step == 7 ? <Shipping /> : null }
                                     { this.state.step == 8 ? <Billing /> : null }
+                                    { this.state.step == 9 ? <Visit /> : null }
 
                                     {/* <Elligibility /> */}
                                     

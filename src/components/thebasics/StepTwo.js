@@ -44,7 +44,7 @@ class StepTwo extends React.Component {
 
                                     <div className="col-12 col-md-12 col-lg-12">
                                         <div class="form-group">
-                                            <label className="change">Add your biological sex.</label> <i type="button" class="btn " data-toggle="tooltip" data-placement="right" title="Your birthdate is required to determine if you're eligible for telemedicine">?</i>
+                                            <label className="change">Add your biological sex.</label> <i type="button" class="btn " data-toggle="tooltip" data-placement="right" title="Your gender is required to determine if you're eligible for telemedicine">?</i>
                                             <select class="form-control">
                                                 <option>Select</option>
                                                 <option>Male</option>

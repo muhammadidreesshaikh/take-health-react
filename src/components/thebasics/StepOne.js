@@ -41,13 +41,13 @@ class StepOne extends React.Component {
 
                                     <div className="col-12 col-md-12 col-lg-12">
                                     <div class="form-group ">
-                                            <input type="code" class="form-control mt-4" placeholder="Zip Code" />
+                                            <input type="number" class="form-control mt-4" placeholder="Zip Code" />
                                         </div>
                                     </div>
 
                                     <div className="col-12 col-md-12 col-lg-12">
                                         <div class="form-group">
-                                            <label className="change">Password Number</label> <i type="button" class="btn " data-toggle="tooltip" data-placement="right" title="Tooltip on right">?</i>
+                                            <label className="change">Password Number</label> <i type="button" class="btn" data-toggle="tooltip" data-placement="right" title="Should be 8 or more than 8 charachters">?</i>
                                             <input type="password" class="form-control" placeholder="XXX-XXX-XXX"/>
                                         </div>
                                     </div>

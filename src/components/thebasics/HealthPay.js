@@ -1,8 +1,6 @@
 import React from 'react';
 import '../../assets/css/healthpay.css';
 
-import { Link } from 'react-router-dom';
-
 class HealthPay extends React.Component {
 
     constructor(props) {
@@ -10,7 +8,7 @@ class HealthPay extends React.Component {
 
         this.state = {
             data: [],
-            loading: false
+            type: 'monthly'
         };
     } 
 
@@ -20,6 +18,10 @@ class HealthPay extends React.Component {
         this.setState({
             loading: true
         });
+    }
+
+    changeType = (value) => {
+        this.setState({ type: value });
     }
 
     render() {
@@ -32,6 +34,24 @@ class HealthPay extends React.Component {
                             <div className="col-12 col-md-12 col-lg-12 p-0">
                                 <div className="card-body">
                                     <h6>How would you like to pay?</h6>
+
+                                    <div className="custom-toggle mt-4">
+                                        <ul>
+                                            <li 
+                                                className={ this.state.type == 'monthly' ? 'active' : '' }
+                                                onClick={ () => {this.changeType('monthly')} }
+                                            >
+                                                MONTHLY
+                                            </li>
+                                            <li 
+                                                className={ this.state.type == 'yearly' ? 'active' : '' }
+                                                onClick={ () => {this.changeType('yearly')} }
+                                            >
+                                                ANNUALLY
+                                            </li>
+                                        </ul>
+                                    </div>
+
                                     <h3>$69.99*</h3>
 
                                     <div className="list">

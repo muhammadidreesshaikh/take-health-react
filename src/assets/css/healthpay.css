@@ -43,3 +43,27 @@
     padding-top: 5px;
     color: var(--color-black);
 }
+
+.health-pay .custom-toggle ul {
+    display: flex;
+    background-color: var(--color-help);
+    margin: 0;
+    padding: 0;
+    border-radius: 25px;
+    border: 2px solid var(--color-help);
+}
+
+.health-pay .custom-toggle ul li{
+    padding: 10px;
+    color: var(--color-white);
+    font-weight: 600;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.health-pay .custom-toggle ul li.active {
+    background-color: var(--color-white);
+    color: var(--color-green);
+    border-radius: 25px;
+}

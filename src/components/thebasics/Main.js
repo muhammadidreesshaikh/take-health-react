@@ -40,20 +40,19 @@ class Main extends React.Component {
     }
 
     nextStep = () => {
-        console.log('stepssss', this.state.step);
+        if (this.state.step < 9) {
+            this.state.step += 1;
 
-        this.state.step += 1;
-
-        this.setState({
-            state: this.state.step
-        });
+            this.setState({
+                state: this.state.step
+            });
+        }
     }
 
     backStep = () => {
         if (this.state.step > 1) {
 
             this.state.step -= 1;
-
             this.setState({
                 state: this.state.step
             });
@@ -88,12 +87,12 @@ class Main extends React.Component {
 
                                     <div className="col-10 col-md-10 col-lg-10">
                                         <h1 className="text-center pt-4">
-                                            { this.state.step >= 1 && this.state.step <=3 ? 
-                                                'The Basics'
-                                                : 
-                                                'Your Coverage' 
-                                            }
-                                            
+                                            { this.state.step >= 1 && this.state.step <=3 ? 'The Basics': null }
+                                            { this.state.step == 4 ? 'Your Coverage' : null }
+                                            { this.state.step == 5 || this.state.step == 6 ? 'Your Health' : null }
+                                            { this.state.step == 7 ? 'Shipping Information' : null }
+                                            { this.state.step == 8 ? 'Billing Information' : null }
+                                            { this.state.step == 9 ? 'Schedule Your Visit' : null }
                                         </h1>
                                     </div>
 
@@ -102,27 +101,26 @@ class Main extends React.Component {
                                     </div> */}
 
                                     <div className="col-4 col-md-4 col-lg-4">
-                                        <div className="active seprator"></div>
+                                        <div className={ this.state.step >= 1 ? 'active seprator' : 'seprator'}></div>
                                     </div>
 
                                     <div className="col-4 col-md-4 col-lg-4">
-                                        <div className="seprator"></div>
+                                        <div className={ this.state.step >= 2 ? 'active seprator' : 'seprator'}></div>
                                     </div>
 
                                     <div className="col-4 col-md-4 col-lg-4">
-                                        <div className="seprator"></div>
+                                        <div className={ this.state.step >= 3 ? 'active seprator' : 'seprator'}></div>
                                     </div>
 
                                     <div className="col-12 col-md-12 col-lg-12">
                                         <h4 className="pt-3">
-                                            { this.state.step >= 1 && this.state.step <=3 ? 
-                                                    'STEP 1 OF 3'
+                                            { this.state.step >= 1 && this.state.step <=8 ? 
+                                                    `STEP ${this.state.step} OF 9`
                                                     : 
                                                     'ALMOST THERE' 
                                             }
                                         </h4>
                                     </div>
- 
                                     
                                     { this.state.step == 1 ? <StepOne /> : null }
                                     { this.state.step == 2 ? <StepTwo /> : null }
@@ -149,7 +147,7 @@ class Main extends React.Component {
                                         }
 
                                         {
-                                            this.state.step == 2 || this.state.step >= 4 ?
+                                            this.state.step == 2 || this.state.step == 4 || this.state.step == 5 || this.state.step == 7 ?
                                             <a 
                                                 onClick={ ()=> {this.nextStep()} }
                                                 className="bg-green w-100 d-block text-center mt-2 font-weight-bold">
@@ -167,6 +165,37 @@ class Main extends React.Component {
                                             </a>
                                             : null
                                         }
+                                        
+                                        {
+                                            this.state.step == 6 ?
+                                            <a 
+                                                onClick={ ()=> {this.nextStep()} }
+                                                className="bg-green w-100 d-block text-center mt-2 font-weight-bold">
+                                                ADD TO CARD
+                                            </a>
+                                            : null
+                                        }
+
+                                        {
+                                            this.state.step == 8 ?
+                                            <a 
+                                                onClick={ ()=> {this.nextStep()} }
+                                                className="bg-green w-100 d-block text-center mt-2 font-weight-bold">
+                                                COMPLETE
+                                            </a>
+                                            : null
+                                        }
+
+{
+                                            this.state.step == 9 ?
+                                            <a 
+                                                onClick={ ()=> {this.nextStep()} }
+                                                className="bg-green w-100 d-block text-center mt-2 font-weight-bold">
+                                                CONSULT WITH A PROVIDER
+                                            </a>
+                                            : null
+                                        }
+
 
                                         <p className="text-center pt-4">By continuing, you agree to accept our Privacy Policy & Terms of Service.</p>
 

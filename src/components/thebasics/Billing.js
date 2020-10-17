@@ -77,8 +77,8 @@ class Billing extends React.Component {
                                             <input type="name" class="form-control" placeholder="MM/YYYY" />
                                         </div>
                                         <div className="col-6 col-md-6 col-lg-6">
-                                            <label className="change">Security</label> <i type="button" class="btn " data-toggle="tooltip" data-placement="right" title="Your birthdate is required to determine if you're eligible for telemedicine">?</i>
-                                            <input type="name" class="form-control" placeholder="CVV" />
+                                            <label className="change">Security</label> <i type="button" class="btn" data-toggle="tooltip" data-placement="right" title="3 charchter long Secret Code CVV">?</i>
+                                            <input type="number" class="form-control" placeholder="CVV" />
                                         </div>
                                     </div>
 

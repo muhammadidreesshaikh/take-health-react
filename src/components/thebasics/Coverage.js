@@ -37,8 +37,8 @@ class Coverage extends React.Component {
 
                                     <div className="col-12 col-md-12 col-lg-12">
                                         <div class="form-group">
-                                            <label className="change">Who has you covered?</label> <i type="button" class="btn " data-toggle="tooltip" data-placement="right" title="Your birthdate is required to determine if you're eligible for telemedicine">?</i>
-                                            <input type="password" class="form-control" placeholder="Search for your employer"/>
+                                            <label className="change">Who has you covered?</label> <i type="button" class="btn " data-toggle="tooltip" data-placement="right" title="Your coverage is required to ensure your visit is covered!">?</i>
+                                            <input type="text" class="form-control" placeholder="Search for your employer"/>
                                         </div>
                                     </div>
                                 </div>

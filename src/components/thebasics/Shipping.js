@@ -38,7 +38,7 @@ class Shipping extends React.Component {
                                     <div className="col-12 col-md-12 col-lg-12">
                                         <div className="row list">
                                             <div className="col-4 col-md-4 col-lg-4">
-                                                <img src={Bag} />
+                                                <img src={Bag} /> 
                                             </div>
 
                                             <div className="col-8 col-md-8 col-lg-8">

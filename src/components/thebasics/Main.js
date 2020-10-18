@@ -15,7 +15,7 @@ import HealthPay from '../../components/thebasics/HealthPay';
 import Shipping from '../../components/thebasics/Shipping';
 import Billing from '../../components/thebasics/Billing';
 import Visit from '../../components/thebasics/Visit';
-
+ 
 
 class Main extends React.Component {
 
@@ -27,7 +27,7 @@ class Main extends React.Component {
         this.state = {
             data: [],
             loading: false,
-            step: 1
+            step: 8
         };
     } 
 

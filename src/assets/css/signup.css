@@ -9,7 +9,12 @@
 }
 
 .signup .logo{
-    padding: 25% 0 0 0;
+    padding: 15% 0 0 0;
+}
+
+.signup .logo img{
+    width: 50%;
+    height: auto;
 }
 
 .signup .logo h1{

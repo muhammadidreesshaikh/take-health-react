@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../../assets/css/signup.css';
-// import logo from '../assets/img/logo_465x320.png'
+import Logo from '../../assets/img/logo.png'
 
 class Signup extends React.Component {
 
@@ -31,7 +31,8 @@ class Signup extends React.Component {
     
                             <div className="col-12 col-md-7 col-lg-7">
                                 <div className='logo'>
-                                   <h1>Take Health</h1>
+                                   {/* <h1>Take Health</h1> */}
+                                   <img src={Logo} />
     
                                    <div className="inner">
                                     <h3>Bringing high-tech health home to you</h3>
@@ -63,7 +64,7 @@ class Signup extends React.Component {
                                     <div className="row text-center">
                                         <div className="col-12">
                                             <Link to="/main" submit className="bg-green w-100 d-block mt-3 font-weight-bold">CONTINUE</Link>
-                                            <p class="text-center pt-4">By bringing, you agree to accept our Privacy Policy & Terms of Service.</p>
+                                            <p class="text-center pt-4">By continuing, you agree to accept our Privacy Policy & Terms of Service.</p>
 
                                             <div className="pt-2">
                                                 <a className="help" href="#">Help?</a>

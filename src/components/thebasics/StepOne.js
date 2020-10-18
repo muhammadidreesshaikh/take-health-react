@@ -36,7 +36,7 @@ class StepOne extends React.Component {
                                     </div>
 
                                     <div className="col-12 col-md-12 col-lg-12">
-                                        <h6>These questios will help us ensure you are eligible for treatment.</h6>
+                                        <h6>These questions will help us ensure you are eligible for treatment.</h6>
                                     </div>
 
                                     <div className="col-12 col-md-12 col-lg-12">

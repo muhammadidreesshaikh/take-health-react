@@ -13,7 +13,8 @@ class Billing extends React.Component {
 
         this.state = {
             data: [],
-            loading: false
+            loading: false,
+            billing: false
         };
     } 
 
@@ -23,6 +24,12 @@ class Billing extends React.Component {
         this.setState({
             loading: true
         });
+    }
+
+    changeBilling = () => {
+        this.setState({
+            billing: !this.state.billing
+        })
     }
 
     render() {
@@ -53,11 +60,23 @@ class Billing extends React.Component {
                                     </div>
 
                                     <div className="form-check pt-5">
-                                        <input class="form-check-input" type="checkbox"></input>
+                                        <input class="form-check-input" type="checkbox" onChange={() => {this.changeBilling()}}></input>
                                         <label class="form-check-label" for="defaultCheck1">
                                             Bill to a different address?
                                         </label>
                                     </div>
+
+                                    
+                                        {
+                                            this.state.billing == true ?
+                                            <div class="form-group pt-2">
+                                                <label className="change">New Billing Address</label>
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                            :
+                                            null
+                                        }
+                                    
 
                                     <form>
                                         <div class="form-group pt-2">
